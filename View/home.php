@@ -20,7 +20,7 @@ require '../Controller/controller.php';
 
 <?php
 
-if(isset($_POST['cadastrar'])){ #se o botão name="cadastrar" foi clickado
+if(isset($_POST['cadastrar'])){
     $livro = $_POST['livro'];
     $autor = $_POST['autor'];
 
@@ -28,7 +28,7 @@ if(isset($_POST['cadastrar'])){ #se o botão name="cadastrar" foi clickado
     $instance->salvar($livro, $autor);
 }
 
-if(isset($_POST['pesquisar'])){ #se o botão name="pesquisar_livro" foi clickado
+if(isset($_POST['pesquisar'])){ 
     $autor = $_POST['autor'];
 
     $instance = new Controller();
