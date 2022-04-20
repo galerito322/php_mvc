@@ -1,6 +1,6 @@
 <?php
 
-require 'Model/model.php';
+require '../Model/model.php';
 
 class Controller{
 

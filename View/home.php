@@ -1,26 +1,21 @@
 <?php
-require 'Controller/controller.php';
+require '../Controller/controller.php';
 ?>
 
 <h3>Cadastrar Livro</h3>
-<form action="" method="post">
-    <p>
-        Nome do Livro:
-        <input type="text" name="livro">
-        Autor:
-        <input type="text" name="autor">
-        <input type="submit" value="Cadastrar" name="cadastrar">
-    </p>
+<form method="POST">
+    Nome do Livro:
+    <input type="text" name="livro">
+    Autor:
+    <input type="text" name="autor">
+    <input type="submit" value="Cadastrar" name="cadastrar"> 
 </form>
 
-<h3>Pesquisar no banco de dados</h3>
-<form method="post">
-    Pesquisar por nome do Autor:
-    <p>
-        Autor:
+<h3>Pesquisar no Banco de Dados</h3>
+<form method="POST">
+    Pesquisar livros do autor:
         <input type="text" name="autor">
         <input type="submit" value="Pesquisar" name="pesquisar">
-    </p>
 </form>
 
 <?php
