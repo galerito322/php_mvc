@@ -1,0 +1,15 @@
+<h3>Cadastrar Livro</h3>
+<form action="../Controllers/ControladorPrincipal.php?controlador=cadastroController&acao=salvar" method="POST">
+    Nome do Livro:
+    <input type="text" name="livro">
+    Autor:
+    <input type="text" name="autor">
+    <input type="submit" value="Cadastrar">
+</form>
+
+<h3>Pesquisar no Banco de Dados</h3>
+<form action="../Controllers/CadastroController.php?acao=buscar" method="POST">
+    Pesquisar livros do autor:
+    <input type="text" name="autor">
+    <input type="submit" value="Buscar">
+</form>
